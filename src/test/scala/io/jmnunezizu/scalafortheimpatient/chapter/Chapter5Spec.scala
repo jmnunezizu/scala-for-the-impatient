@@ -1,5 +1,14 @@
-package io.jmnunezizu.scalafortheimpatient.chapter5
+package io.jmnunezizu.scalafortheimpatient.chapter
 
+import io.jmnunezizu.scalafortheimpatient.chapter05.Exercise01.Counter
+import io.jmnunezizu.scalafortheimpatient.chapter05.Exercise02.BankAccount
+import io.jmnunezizu.scalafortheimpatient.chapter05.Exercise03.Time
+import io.jmnunezizu.scalafortheimpatient.chapter05.Exercise04.Time2
+import io.jmnunezizu.scalafortheimpatient.chapter05.Exercise05.Student
+import io.jmnunezizu.scalafortheimpatient.chapter05.Exercise06.Person
+import io.jmnunezizu.scalafortheimpatient.chapter05.Exercise07.Person2
+import io.jmnunezizu.scalafortheimpatient.chapter05.Exercise08.Car
+import io.jmnunezizu.scalafortheimpatient.chapter05.Exercise10.Employee
 import org.specs2.Specification
 
 class Chapter5Spec extends Specification {
