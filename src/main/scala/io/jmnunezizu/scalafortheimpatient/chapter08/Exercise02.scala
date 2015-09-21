@@ -60,5 +60,5 @@ object Exercise02 extends App {
   assert(account.deposit(10) == 152)
   assert(account.deposit(10) == 162)
   assert(account.withdraw(1) == 160)
-  
+
 }
