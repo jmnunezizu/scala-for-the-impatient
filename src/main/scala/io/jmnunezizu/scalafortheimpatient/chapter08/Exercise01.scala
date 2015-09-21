@@ -13,6 +13,7 @@ package io.jmnunezizu.scalafortheimpatient.chapter08
  *   def deposit(amount: Double) = { balance += amount; balance }
  *   def withdraw(amount: Double) = { balance -= amount; balance }
  * }
+ * </pre>
  */
 object Exercise01 extends App {
 
