@@ -39,7 +39,7 @@ package com {
 
 package com.horstmann.impatient {
 
-  import io.jmnunezizu.scalafortheimpatient.chapter07.com.horstmann.Cay
+  import com.horstmann.Cay
 
   class B {
     println(Cay.name) // Cay can be accessed by importing the class
