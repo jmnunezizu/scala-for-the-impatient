@@ -5,17 +5,21 @@ package io.jmnunezizu.scalafortheimpatient.chapter07
  *
  * Write an example program to demonstrate that
  *
- * {code}
+ * <pre>
+ * {@code
  * package com.horstmann.impatient
- * {code}
+ * }
+ * </pre>
  *
  * is not the same as
  *
- * {code}
+ * <pre>
+ * {@code
  * package com
  * package horstmann
  * package impatient
- * {code}
+ * }
+ * </pre>
  */
 object Exercise01 extends App {
 

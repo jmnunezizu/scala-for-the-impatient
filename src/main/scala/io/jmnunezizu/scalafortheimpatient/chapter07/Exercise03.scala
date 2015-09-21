@@ -3,14 +3,16 @@ package io.jmnunezizu.scalafortheimpatient.chapter07
 /**
  * Chapter 7 - Execise 3.
  *
- * Write a package {code}random{code} with functions
- * {code}nextInt(): Int, nextDouble(): Double{code},
+ * Write a package {@code random} with functions
+ * {@code nextInt(): Int, nextDouble(): Double},
  * and {code}setSeed(seed: Int): Unit{code}. To generate random numbers, use
  * the linear congruential generator:
  *
- * {code}
+ * <pre>
+ * {@code
  * next = previous x a + b mod 2^n
- * {code}
+ * }
+ * </pre>
  *
  * where a = 1664525, b = 1013904223, and n = 32.
  */

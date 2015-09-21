@@ -5,10 +5,12 @@ package io.jmnunezizu.scalafortheimpatient.chapter07
  *
  * What is the effect of
  *
- * {code}
+ * <pre>
+ * {@code
  * import java._
  * import javax._
- * {code}
+ * }
+ * </pre>
  */
 object Exercise08 extends App {
 
