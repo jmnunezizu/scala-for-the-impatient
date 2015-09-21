@@ -1,26 +1,25 @@
 package io.jmnunezizu.scalafortheimpatient.chapter07
 
-import java.util.{HashMap => JavaHashMap}
-import scala.collection.immutable.{Map => ScalaHashMap}
-import scala.collection.JavaConverters._
-import scala.collection.JavaConversions._
-
 /**
- * Chapter 7 - Exercise 6.
+ * Chapter 7 - Exercise 7.
  *
- * Write a program that copies all elements from a Java hash map into a Scala
- * hash map. Use imports to rename both classes.
+ * In the preceding exercise, move all imports into the innermost scope possible.
  */
-object Exercise06 extends App {
+object Exercise07 extends App {
 
+  import java.util.{HashMap => JavaHashMap}
   val javaMap: JavaHashMap[Int, String] = new JavaHashMap[Int, String] {
     put(1, "a")
     put(2, "b")
     put(3, "c")
   }
+
+  import scala.collection.immutable.{Map => ScalaHashMap}
+  import scala.collection.JavaConverters._
   val scalaMap: ScalaHashMap[Int, String] = javaMap.asScala.toMap
 
   println("Java Map")
+  import scala.collection.JavaConversions._
   for (entry <- javaMap.entrySet())
     println(s"${entry.getKey} -> ${entry.getValue}")
 
