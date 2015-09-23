@@ -11,8 +11,14 @@ object Exercise05 extends App {
   trait PropertyChangeSupport {
     protected val delegate = new JavaPropertyChangeSupport(this)
 
-    def addPropertyChangeListener(listener: PropertyChangeListener) = delegate.addPropertyChangeListener(listener)
-    def removePropertyChangeListener(listener: PropertyChangeListener) = delegate.removePropertyChangeListener(listener)
+    def addPropertyChangeListener(listener: PropertyChangeListener) =
+      delegate.addPropertyChangeListener(listener)
+
+    def addPropertyChangeListener(propertyName: String, listener: PropertyChangeListener) =
+      delegate.addPropertyChangeListener(propertyName, listener)
+
+    def removePropertyChangeListener(listener: PropertyChangeListener) =
+      delegate.removePropertyChangeListener(listener)
   }
 
   class ListenedPoint(x: Int, y: Int) extends Point(x, y) with PropertyChangeSupport {
@@ -30,7 +36,7 @@ object Exercise05 extends App {
 
   val listener = new Listener()
   val p1 = new ListenedPoint(10, 20)
-  p1.addPropertyChangeListener(listener)
+  p1.addPropertyChangeListener("setLocation", listener)
   p1.setLocation(20, 10)
 
 }
