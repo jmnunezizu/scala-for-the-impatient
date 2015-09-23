@@ -3,6 +3,8 @@ package io.jmnunezizu.scalafortheimpatient.chapter10
 import java.awt.Point
 
 /**
+ * Chapter 10 - Exercise 3.
+ *
  * Define a class {@code OrderedPoint} by mixing {@code scala.math.Ordered[Point]}
  * into {@code java.awt.Point}. Use lexicographic ordering, i.e.
  * {@code (x, y) < (x', y') if x < x' or x = x' and y < y'}.

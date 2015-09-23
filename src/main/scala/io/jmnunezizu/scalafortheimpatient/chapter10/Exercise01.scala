@@ -1,6 +1,8 @@
 package io.jmnunezizu.scalafortheimpatient.chapter10
 
 /**
+ * Chapter 10 - Exercise 1.
+ *
  * The {@code java.awt.Rectangle} class has useful methods {@code translate}
  * and {@code grow} that are unfortunately absent from classes such as
  * {@code java.awt.geom.Ellipse2D}. In Scala, you can fix this problem. Define
