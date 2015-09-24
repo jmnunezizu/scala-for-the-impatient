@@ -10,5 +10,4 @@ object Exercise07 extends App {
   assert(adjustToPair(_ * _)(6, 7) == 42)
   assert(adjustToPair(_ + _)(3, 7) == 10)
 
-
 }
