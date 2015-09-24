@@ -23,5 +23,5 @@ object Exercise09 extends App {
   val d = Array(1, 2, 3)
 
   assert(corresponds(c, d, checkLength) == false)
-  
+
 }
