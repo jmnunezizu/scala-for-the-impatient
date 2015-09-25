@@ -23,7 +23,6 @@ object Exercise05 extends App {
     t.foldLeft(0)((total, el) => el match {
       case n: Int => n + total
       case l: List[Any] => leafSum(l) + total
-      case Nil => 0
     })
   }
 
