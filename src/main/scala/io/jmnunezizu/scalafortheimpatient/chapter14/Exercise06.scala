@@ -34,7 +34,8 @@ object Exercise06 extends App {
     @tailrec
     def loop(total: Int, node: BinaryTree, pending: List[BinaryTree]): Int = {
       node match {
-        case Leaf(n) => if (pending.isEmpty) n + total else loop(n + total, pending.head, pending.tail)
+        case Leaf(n) if pending.isEmpty => n + total
+        case Leaf(n) => loop(n + total, pending.head, pending.tail)
         case Node(left, right) => loop(total, left, right :: pending)
       }
     }
