@@ -1,5 +1,7 @@
 package io.jmnunezizu.scalafortheimpatient.chapter14
 
+import scala.annotation.tailrec
+
 /**
  * Chapter 14 - Exercise 5.
  *
@@ -26,7 +28,22 @@ object Exercise05 extends App {
     })
   }
 
+  def leafSum2(t: List[Any]): Int = {
+    @tailrec
+    def leafSumInternal(total: Int, rest: List[Any]): Int = {
+      rest match {
+        case (n: Int) :: Nil => n + total // last number
+        case (n: Int) :: tail => leafSumInternal(total + n, tail) // first number
+        case (l: List[Any]) :: tail => leafSumInternal(total, l ++ tail) // when it's a list, combine them and make a recursive call
+        case _ => total // return value when there are no more elements
+      }
+    }
+
+    leafSumInternal(0, t)
+  }
+
   val tree: List[Any] = List(List(3, 8), 2, List(5))
   assert(leafSum(tree) == 18)
+  assert(leafSum2(tree) == 18)
 
 }
