@@ -10,7 +10,7 @@ object Exercise02 extends App {
 
   class Pair[T](val a: T, val b: T) {
     def swap(): Pair[T] = new Pair(b, a)
-    override def toString(): String = s"($a,$b)"
+      override def toString(): String = s"($a,$b)"
   }
 
   val p1: Pair[Int] = new Pair(29, 92)
