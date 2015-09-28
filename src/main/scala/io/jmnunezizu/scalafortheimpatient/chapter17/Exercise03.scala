@@ -19,5 +19,5 @@ object Exercise03 extends App {
 
   assert(p1.toString() == "(9,John)")
   assert(p2.toString() == "(John,9)")
-  
+
 }
