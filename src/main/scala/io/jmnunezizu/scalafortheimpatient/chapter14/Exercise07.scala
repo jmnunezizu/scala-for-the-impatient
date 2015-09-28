@@ -2,7 +2,7 @@ package io.jmnunezizu.scalafortheimpatient.chapter14
 
 /**
  * Chapter 14 - Exercise 7.
- * 
+ *
  * Extend the tree in the preceding exercise so that each node can have an
  * arbitrary number of children, and reimplement the leafSum function. The
  * tree in exercise 5 should be expressible as:
