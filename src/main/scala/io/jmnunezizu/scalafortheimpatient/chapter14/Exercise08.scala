@@ -28,7 +28,7 @@ object Exercise08 extends App {
       case Leaf(value) => value
       case Node(op, Leaf(v)) => op(0, v)
       case Node(op, Leaf(v1), Leaf(v2)) => op(v1, v2)
-      case Node(op, nodes @ _*) => nodes.map(eval).sum
+      case Node(op, nodes @ _*) => nodes.map(eval).reduceLeft(op(_, _))
     }
   }
 
